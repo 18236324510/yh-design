@@ -1,13 +1,11 @@
 <template>
-  <div class="wrapper">
-    <i :class="'cuIcon-' + props.name" :style="iconStyle"></i>
-  </div>
+  <i :class="'cuIcon-' + props.name" :style="iconStyle"></i>
 </template>
 
 <script setup lang="ts">
 import { computed, toRefs } from "vue";
 import { IconNameType } from "./type";
-import './icon.less'
+import "./icon.less";
 export interface IProps {
   name: IconNameType;
   size?: number | string;
@@ -22,7 +20,3 @@ const iconStyle = computed(() => {
   return { fontSize: props.size + "px", color: props.color };
 });
 </script>
-
-<!-- <style lang="less" scoped>
-@import url("./icon.css");
-</style> -->
