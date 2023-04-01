@@ -1,6 +1,6 @@
 {
   "name": "yh-design",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "lib/index.js",
   "module": "es/index.mjs",
@@ -8,10 +8,7 @@
     "es",
     "lib"
   ],
-  "keywords": [
-    "yh-design",
-    "vue3组件库"
-  ],
+  "keywords": [],
   "sideEffects": [
     "**/*.css"
   ],
@@ -19,7 +16,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "release": "release-it"
   },
-  "keywords": [],
   "author": "cui",
   "license": "ISC",
   "typings": "lib/index.d.ts",
