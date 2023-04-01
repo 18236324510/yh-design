@@ -23,7 +23,7 @@ export default defineConfig({
           preserveModules: true,
           exports: "named",
           //配置打包根目录
-          dir: "../yhUI/es",
+          dir: "../yh-design/es",
         },
         {
           //打包格式
@@ -34,7 +34,7 @@ export default defineConfig({
           preserveModules: true,
           exports: "named",
           //配置打包根目录
-          dir: "../yhUI/lib",
+          dir: "../yh-design/lib",
         },
       ],
       //忽略打包vue和.less文件
@@ -48,7 +48,7 @@ export default defineConfig({
     DefineOptions(),
     dts({
       entryRoot: "./src",
-      outputDir: ["../yhUI/es/src", "../yhUI/lib/src"],
+      outputDir: ["../yh-design/es/src", "../yh-design/lib/src"],
       //指定使用的tsconfig.json为我们整个项目根目录下,如果不配置,你也可以在components下新建tsconfig.json
       tsConfigFilePath: "../../tsconfig.json",
     }),

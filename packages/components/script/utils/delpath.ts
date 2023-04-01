@@ -24,7 +24,7 @@ const delPath = async (path: string) => {
       }
     });
 
-    if (path != `${pkgPath}/yhUI`) fs.rmdirSync(path);
+    if (path != `${pkgPath}/yh-design`) fs.rmdirSync(path);
   }
 };
 export default delPath;
