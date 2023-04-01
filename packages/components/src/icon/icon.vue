@@ -7,6 +7,7 @@
 <script setup lang="ts">
 import { computed, toRefs } from "vue";
 import { IconNameType } from "./type";
+import './icon.less'
 export interface IProps {
   name: IconNameType;
   size?: number | string;
@@ -22,6 +23,6 @@ const iconStyle = computed(() => {
 });
 </script>
 
-<style lang="less" scoped>
-@import url("./icon.less");
-</style>
+<!-- <style lang="less" scoped>
+@import url("./icon.css");
+</style> -->

@@ -6,8 +6,3 @@
 <script setup lang="ts">
 defineOptions({ name: "Button" });
 </script>
-
-<style lang="less" scoped>
-.wrapper {
-}
-</style>
