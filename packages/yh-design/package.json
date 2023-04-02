@@ -1,6 +1,6 @@
 {
   "name": "yh-design",
-  "version": "1.0.7",
+  "version": "1.0.10",
   "description": "",
   "main": "lib/index.js",
   "module": "es/index.mjs",
