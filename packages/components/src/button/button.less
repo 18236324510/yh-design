@@ -2,7 +2,7 @@
           按钮
  ==================== */
 
-.cu-btn {
+.yh-button {
   position: relative;
   border: 0px;
   display: inline-flex;
@@ -21,19 +21,19 @@
   margin-right: initial;
 }
 
-.cu-btn::after {
+.yh-button::after {
   display: none;
 }
 
-.cu-btn:not([class*='bg-']) {
+.yh-button:not([class*='bg-']) {
   background-color: #f0f0f0;
 }
 
-.cu-btn[class*='line'] {
+.yh-button[class*='line'] {
   background-color: transparent;
 }
 
-.cu-btn[class*='line']::after {
+.yh-button[class*='line']::after {
   content: ' ';
   display: block;
   width: 200%;
@@ -50,36 +50,36 @@
   pointer-events: none;
 }
 
-.cu-btn.round[class*='line']::after {
+.yh-button.round[class*='line']::after {
   border-radius: 500px;
 }
 
-.cu-btn[class*='lines']::after {
+.yh-button[class*='lines']::after {
   border: 3px solid currentColor;
 }
 
-.cu-btn[class*='bg-']::after {
+.yh-button[class*='bg-']::after {
   display: none;
 }
 
-.cu-btn.sm {
+.yh-button.sm {
   padding: 0 10px;
   font-size: 1px;
   height: 24px;
 }
 
-.cu-btn.lg {
+.yh-button.lg {
   padding: 0 20px;
   font-size: 16px;
   height: 40px;
 }
 
-.cu-btn.cuIcon.sm {
+.yh-button.cuIcon.sm {
   width: 24px;
   height: 24px;
 }
 
-.cu-btn.cuIcon {
+.yh-button.cuIcon {
   width: 32px;
   height: 32px;
   border-radius: 250px;
@@ -91,26 +91,24 @@ button.cuIcon.lg {
   height: 40px;
 }
 
-.cu-btn.shadow-blur::before {
+.yh-button.shadow-blur::before {
   top: 2px;
   left: 2px;
   filter: blur(3px);
   opacity: 0.6;
 }
 
-.cu-btn.button-hover {
+.yh-button.button-hover {
   transform: translate(0.5px, 0.5px);
 }
 
-.block {
+.yh-button.block {
   display: block;
+  width: calc(100% - 32px);
+  margin: 16px;
 }
 
-.cu-btn.block {
-  display: flex;
-}
-
-.cu-btn[disabled] {
+.yh-button[disabled] {
   opacity: 0.6;
-  color: #ffffff;
+  filter: alpha(opacity=65);
 }

@@ -1,14 +1,13 @@
 <template>
-  <div class="wrapper">
-    app
-    <Button></Button>
-    <Icon name="appreciate" size="100" color="red"></Icon>
+  <div>
+    <RouterView />
   </div>
 </template>
 
-<script setup lang="ts"></script>
-
-<style lang="less" scoped>
-.wrapper {
+<style>
+body {
+  background-color: #f1f1f1;
+  padding: 0;
+  margin: 0;
 }
 </style>
