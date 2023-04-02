@@ -3,7 +3,7 @@
 </template>
 
 <script setup lang="ts">
-import { computed, toRefs } from 'vue'
+import { computed } from 'vue'
 import { IconNameType } from './type'
 import './icon.less'
 import { createNamespace } from '../../script/utils/bem'
@@ -14,7 +14,6 @@ export interface IProps {
   spin?: 'spin' | 'pulse'
 }
 const bem = createNamespace('icon')
-console.log(bem.b('cui'), bem.m('yun'))
 
 defineOptions({ name: 'Icon' })
 const props = withDefaults(defineProps<IProps>(), {
