@@ -295,6 +295,6 @@ export const IconNameList = [
   'cuIcon',
   'loading2',
   'btn'
-] as const;
+] as const
 
-export type IconNameType = (typeof IconNameList)[number];
+export type IconNameType = (typeof IconNameList)[number]

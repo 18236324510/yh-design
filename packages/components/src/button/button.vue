@@ -4,5 +4,5 @@
   </div>
 </template>
 <script setup lang="ts">
-defineOptions({ name: 'Button' });
+defineOptions({ name: 'Button' })
 </script>
