@@ -1,0 +1,4 @@
+**.d.ts
+/packages/yh-design
+dist
+node_modules

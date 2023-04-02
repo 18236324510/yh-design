@@ -5,8 +5,8 @@ import { Plugin } from "vue";
 
 export default {
   install: (app: App) => {
-    for (let c in components) {
-      let _c = c as keyof typeof components;
+    for (const c in components) {
+      const _c = c as keyof typeof components;
       app.use(components[_c] as unknown as Plugin);
     }
   },
