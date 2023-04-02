@@ -14,7 +14,7 @@ import { createNamespace } from '../../script/utils/bem'
 import { ColorType } from './type'
 import Icon from '../icon'
 import './button.less'
-import { toRefs } from 'vue'
+import { toRefs, withDefaults } from 'vue'
 export interface IProps {
   round?: boolean
   size?: 'sm' | 'lg'
