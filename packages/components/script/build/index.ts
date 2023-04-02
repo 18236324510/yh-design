@@ -18,6 +18,13 @@ export const buildStyle = () => {
     .pipe(dest(`${pkgPath}/yh-design/lib/src`))
     .pipe(dest(`${pkgPath}/yh-design/es/src`))
 }
+export const buildS = () => {
+  return src(`${componentPath}/styles/**/**.less`)
+    .pipe(less())
+    .pipe(autoprefixer())
+    .pipe(dest(`${pkgPath}/yh-design/lib/styles`))
+    .pipe(dest(`${pkgPath}/yh-design/es/styles`))
+}
 
 //打包组件
 export const buildComponent = async () => {
@@ -27,6 +34,7 @@ export const buildComponent = async () => {
 export default series(
   async () => removeDist(),
   parallel(
+    async () => buildS(),
     async () => buildStyle(),
     async () => buildComponent()
   )
