@@ -14,7 +14,7 @@ import { createNamespace } from '../../script/utils/bem'
 import { ColorType } from './type'
 import Icon from '../icon'
 import './button.less'
-import { toRefs, withDefaults } from 'vue'
+import { toRefs } from 'vue'
 export interface IProps {
   round?: boolean
   size?: 'sm' | 'lg'
@@ -30,6 +30,7 @@ defineOptions({ name: 'Button' })
 const emit = defineEmits<{
   (e: 'click'): void
 }>()
+const props = withDefaults(defineProps<IProps>(), {})
 const {
   round,
   size,
@@ -40,7 +41,7 @@ const {
   block,
   loading,
   disabled
-} = toRefs(withDefaults(defineProps<IProps>(), {}))
+} = toRefs(props)
 const bem = createNamespace('button')
 
 const colorName = color?.value ? `bg-${color.value}` : ''
