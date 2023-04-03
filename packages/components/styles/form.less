@@ -1,0 +1,92 @@
+/* ==================
+         表单
+ ==================== */
+
+.yh-form--group {
+  background-color: #ffffff;
+  padding: 0.5px 15px;
+  display: flex;
+  align-items: center;
+  min-height: 50px;
+  justify-content: space-between;
+}
+
+.yh-form--group + .yh-form--group {
+  border-top: 0.5px solid #eee;
+}
+
+.yh-form--group .title {
+  text-align: justify;
+  padding-right: 15px;
+  font-size: 15px;
+  position: relative;
+  height: 30px;
+  line-height: 30px;
+}
+
+.yh-form--group input {
+  flex: 1;
+  font-size: 15px;
+  color: #555;
+  padding-right: 10px;
+}
+
+.yh-form--group > text[class*='cuIcon-'] {
+  font-size: 13px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.yh-form--group textarea {
+  margin: 16px 0 15px;
+  height: 4.6em;
+  width: 100%;
+  line-height: 1.2em;
+  flex: 1;
+  font-size: 14px;
+  padding: 0;
+}
+
+.yh-form--group.align-start .title {
+  height: 1em;
+  margin-top: 16px;
+  line-height: 1em;
+}
+
+.yh-form--group picker {
+  flex: 1;
+  padding-right: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.yh-form--group picker .picker {
+  line-height: 50px;
+  font-size: 14px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  text-align: right;
+}
+
+.yh-form--group picker::after {
+  font-family: cuIcon;
+  display: block;
+  content: '\e6a3';
+  position: absolute;
+  font-size: 17px;
+  color: #8799a3;
+  line-height: 50px;
+  width: 30px;
+  text-align: center;
+  top: 0;
+  bottom: 0;
+  right: -10px;
+  margin: auto;
+}
+
+.yh-form--group textarea[disabled],
+.yh-form--group textarea[disabled] .placeholder {
+  color: transparent;
+}

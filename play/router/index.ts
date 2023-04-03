@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import button from '../view/button/index.vue'
 import icon from '../view/icon/index.vue'
+import input from '../view/input/index.vue'
 
 const router = createRouter({
   history: createWebHistory(),
@@ -14,6 +15,11 @@ const router = createRouter({
       path: '/icon',
       name: 'icon',
       component: icon
+    },
+    {
+      path: '/input',
+      name: 'input',
+      component: input
     },
     {
       path: '/',
